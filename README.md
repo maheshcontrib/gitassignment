@@ -73,7 +73,7 @@
         return sum;
     }
     ```
-6. Check status of repo
+6. Check status of repo. Note your observations.
     ```bash
         git status
     ```
@@ -105,10 +105,31 @@
     ```
     > Tip: Use  `q` to exit the log in case it spans multiple pages
 
+#### How to retrieve old changes
+1. List the contents of the directory for master brach `HEAD`
+    ```bash
+    ls # Linux
+    dir # Windows
+    ```
+2. Note the hash in the output of `git log ` command for the snapshot of source code you want to retrieve. The use the following command.
+    ```bash
+    git checkout *hash*
+    ```
+    > `hash` is hash of the snapshot you want to retrieve
+3. Now have a look at the source code and see the changes as opposed to the `master` branch
+
 #### Additional assignment
 1. Add a new feature for implementing subtract functionality
 2. Give your friend an access to your repo. Let her/him add new features of multiplication and push it to the repo. How do you get that feature replicated in your local repo.
+    > Use following command
+
     ```bash
         git pull
     ```
 
+#### Tips
+>Use following command to get rid of frequent authentication prompts
+
+```bash
+git config credential.helper store
+```
