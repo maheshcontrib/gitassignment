@@ -1,41 +1,47 @@
 #### Getting hands-on using Git Basics 
 1. Signup to GitHub using you Gmail ID
 2. Create a repo with name `ncrwork`
-3. Set basic global configuration
+3. Set basic global configuration for username and email ID
     ```bash
-    touch main.c
+    git config --global user.name “Mahesh Patil”
+    git config --global user.name “maheshcontrib@gmail.com”
     ```
-4. Clone the repo
+    > Replace with your `name` and `email`
+4. Set configuration for preety colors on the console
+    ```bash
+    git config --global color.ui auto
+    ```
+5. Clone the repo
     ```bash
     git clone https://github.com/maheshcontrib/ncrwork
     ```
-5. Create a folder `arith`. Inside the folder create file `main.c`.
+6. Create a folder `arith`. Inside the folder create file `main.c`.
     ```bash
     touch main.c
     ```
-6. See the status of repo
+7. See the status of repo
     ```bash
     git status
     ```
-7. Tell git to stage the file and keep it tracked
+8. Tell git to stage the file and keep it tracked
     ```bash
     git add main.c
     ```
-8. Check status again. Note the difference.
-9. Commit the change
+9. Check status again. Note the difference.
+10. Commit the change
     ```bash
     git commit -m "Added main file for the project"
     ```
-10. Check status again. Note the difference.
-11. Have a look at the repo on the web browser. It should be empty.
+11. Check status again. Note the difference.
+12. Have a look at the repo on the web browser. It should be empty.
 ```bash
     git status
 ```
-12. Push the commits to the remote repo
+13. Push the commits to the remote repo
 ```bash
     git push
 ```
-13. Have a look at the repo on the web browser. It should contain `main.c`.
+14. Have a look at the repo on the web browser. It should contain `main.c`.
 
 #### Add new feature to the code for adding two integers.
 1. Find how many branches exists
@@ -101,3 +107,8 @@
 
 #### Additional assignment
 1. Add a new feature for implementing subtract functionality
+2. Give your friend an access to your repo. Let her/him add new features of multiplication and push it to the repo. How do you get that feature replicated in your local repo.
+    ```bash
+        git pull
+    ```
+
