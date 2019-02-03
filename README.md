@@ -4,7 +4,7 @@
 3. Set basic global configuration for username and email ID
     ```bash
     git config --global user.name “Mahesh Patil”
-    git config --global user.name “maheshcontrib@gmail.com”
+    git config --global user.email “maheshcontrib@gmail.com”
     ```
     > Replace with your `name` and `email`
 4. Set configuration for preety colors on the console
